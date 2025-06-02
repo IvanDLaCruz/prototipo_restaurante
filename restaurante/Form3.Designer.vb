@@ -32,6 +32,7 @@ Partial Class Form3
         PB_Restaurante = New PictureBox()
         PB_Salir = New PictureBox()
         PictureBox5 = New PictureBox()
+        MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PB_Menu, ComponentModel.ISupportInitialize).BeginInit()
         CType(PB_Restaurante, ComponentModel.ISupportInitialize).BeginInit()
@@ -77,36 +78,36 @@ Partial Class Form3
         MaterialLabel2.AutoSize = True
         MaterialLabel2.Depth = 0
         MaterialLabel2.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel2.Location = New Point(549, 300)
+        MaterialLabel2.Location = New Point(32, 388)
         MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel2.Name = "MaterialLabel2"
-        MaterialLabel2.Size = New Size(107, 19)
+        MaterialLabel2.Size = New Size(86, 19)
         MaterialLabel2.TabIndex = 3
-        MaterialLabel2.Text = "MaterialLabel2"
+        MaterialLabel2.Text = "Restaurante"
         ' 
         ' MaterialLabel3
         ' 
         MaterialLabel3.AutoSize = True
         MaterialLabel3.Depth = 0
         MaterialLabel3.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel3.Location = New Point(549, 378)
+        MaterialLabel3.Location = New Point(59, 574)
         MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel3.Name = "MaterialLabel3"
-        MaterialLabel3.Size = New Size(107, 19)
+        MaterialLabel3.Size = New Size(41, 19)
         MaterialLabel3.TabIndex = 4
-        MaterialLabel3.Text = "MaterialLabel3"
+        MaterialLabel3.Text = "Menu"
         ' 
         ' MaterialLabel4
         ' 
         MaterialLabel4.AutoSize = True
         MaterialLabel4.Depth = 0
         MaterialLabel4.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel4.Location = New Point(707, 378)
+        MaterialLabel4.Location = New Point(37, 774)
         MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         MaterialLabel4.Name = "MaterialLabel4"
-        MaterialLabel4.Size = New Size(107, 19)
+        MaterialLabel4.Size = New Size(63, 19)
         MaterialLabel4.TabIndex = 5
-        MaterialLabel4.Text = "MaterialLabel4"
+        MaterialLabel4.Text = "Reportes"
         ' 
         ' PB_Menu
         ' 
@@ -131,7 +132,7 @@ Partial Class Form3
         ' PB_Salir
         ' 
         PB_Salir.Image = My.Resources.Resources.cerrar
-        PB_Salir.Location = New Point(12, 905)
+        PB_Salir.Location = New Point(12, 890)
         PB_Salir.Name = "PB_Salir"
         PB_Salir.Size = New Size(118, 104)
         PB_Salir.SizeMode = PictureBoxSizeMode.StretchImage
@@ -140,19 +141,32 @@ Partial Class Form3
         ' 
         ' PictureBox5
         ' 
-        PictureBox5.Image = My.Resources.Resources.cash_register
-        PictureBox5.Location = New Point(12, 658)
+        PictureBox5.Image = My.Resources.Resources.reporte_de_negocios
+        PictureBox5.Location = New Point(12, 667)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(118, 104)
         PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox5.TabIndex = 9
         PictureBox5.TabStop = False
         ' 
+        ' MaterialLabel5
+        ' 
+        MaterialLabel5.AutoSize = True
+        MaterialLabel5.Depth = 0
+        MaterialLabel5.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
+        MaterialLabel5.Location = New Point(59, 997)
+        MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialLabel5.Name = "MaterialLabel5"
+        MaterialLabel5.Size = New Size(33, 19)
+        MaterialLabel5.TabIndex = 10
+        MaterialLabel5.Text = "Salir"
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1902, 1033)
+        Controls.Add(MaterialLabel5)
         Controls.Add(PictureBox5)
         Controls.Add(PB_Salir)
         Controls.Add(PB_Restaurante)
@@ -187,4 +201,5 @@ Partial Class Form3
     Friend WithEvents PB_Restaurante As PictureBox
     Friend WithEvents PB_Salir As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
 End Class

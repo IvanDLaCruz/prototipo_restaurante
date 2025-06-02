@@ -44,7 +44,7 @@ Partial Class Form5
         ' 
         PictureBox1.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         PictureBox1.Image = My.Resources.Resources.comedor
-        PictureBox1.Location = New Point(151, 65)
+        PictureBox1.Location = New Point(46, 196)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(65, 54)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -55,7 +55,7 @@ Partial Class Form5
         ' 
         PictureBox2.BackColor = Color.Red
         PictureBox2.Image = My.Resources.Resources.comedor
-        PictureBox2.Location = New Point(248, 65)
+        PictureBox2.Location = New Point(257, 79)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(65, 54)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -66,7 +66,7 @@ Partial Class Form5
         ' 
         PictureBox3.BackColor = Color.Red
         PictureBox3.Image = My.Resources.Resources.comedor
-        PictureBox3.Location = New Point(151, 177)
+        PictureBox3.Location = New Point(151, 196)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(65, 54)
         PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
@@ -77,7 +77,7 @@ Partial Class Form5
         ' 
         PictureBox4.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         PictureBox4.Image = My.Resources.Resources.comedor
-        PictureBox4.Location = New Point(248, 177)
+        PictureBox4.Location = New Point(257, 305)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(65, 54)
         PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
@@ -88,7 +88,7 @@ Partial Class Form5
         ' 
         PictureBox5.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         PictureBox5.Image = My.Resources.Resources.comedor
-        PictureBox5.Location = New Point(46, 65)
+        PictureBox5.Location = New Point(151, 79)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(65, 54)
         PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
@@ -99,7 +99,7 @@ Partial Class Form5
         ' 
         PictureBox6.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         PictureBox6.Image = My.Resources.Resources.comedor
-        PictureBox6.Location = New Point(46, 177)
+        PictureBox6.Location = New Point(46, 79)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(65, 54)
         PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
@@ -137,7 +137,7 @@ Partial Class Form5
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(881, 522)
+        ClientSize = New Size(504, 522)
         Controls.Add(GroupBox1)
         Name = "Form5"
         Text = "Form5"

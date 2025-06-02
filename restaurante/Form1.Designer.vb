@@ -1,7 +1,7 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
-
+    
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(disposing As Boolean)
@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        MaterialTextBox1 = New MaterialSkin.Controls.MaterialTextBox()
+        Txt_Pago = New MaterialSkin.Controls.MaterialTextBox()
         PB_Tarjeta = New PictureBox()
         PB_Efectivo = New PictureBox()
         PB_Transferencia = New PictureBox()
@@ -31,8 +31,8 @@ Partial Class Form1
         Rb_Transferencia = New MaterialSkin.Controls.MaterialRadioButton()
         Rb_Tarjeta = New MaterialSkin.Controls.MaterialRadioButton()
         Rb_efectivo = New MaterialSkin.Controls.MaterialRadioButton()
-        MaterialTextBox2 = New MaterialSkin.Controls.MaterialTextBox()
-        MaterialTextBox3 = New MaterialSkin.Controls.MaterialTextBox()
+        Txt_Total = New MaterialSkin.Controls.MaterialTextBox()
+        Txt_Cambio = New MaterialSkin.Controls.MaterialTextBox()
         MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
@@ -45,22 +45,22 @@ Partial Class Form1
         CType(PB_Cobrar, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' MaterialTextBox1
+        ' Txt_Pago
         ' 
-        MaterialTextBox1.AnimateReadOnly = False
-        MaterialTextBox1.BorderStyle = BorderStyle.None
-        MaterialTextBox1.Depth = 0
-        MaterialTextBox1.Font = New Font("Roboto", 9.6F)
-        MaterialTextBox1.LeadingIcon = Nothing
-        MaterialTextBox1.Location = New Point(241, 309)
-        MaterialTextBox1.MaxLength = 50
-        MaterialTextBox1.MouseState = MaterialSkin.MouseState.OUT
-        MaterialTextBox1.Multiline = False
-        MaterialTextBox1.Name = "MaterialTextBox1"
-        MaterialTextBox1.Size = New Size(173, 50)
-        MaterialTextBox1.TabIndex = 0
-        MaterialTextBox1.Text = "$200.00"
-        MaterialTextBox1.TrailingIcon = Nothing
+        Txt_Pago.AnimateReadOnly = False
+        Txt_Pago.BorderStyle = BorderStyle.None
+        Txt_Pago.Depth = 0
+        Txt_Pago.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
+        Txt_Pago.LeadingIcon = Nothing
+        Txt_Pago.Location = New Point(241, 309)
+        Txt_Pago.MaxLength = 50
+        Txt_Pago.MouseState = MaterialSkin.MouseState.OUT
+        Txt_Pago.Multiline = False
+        Txt_Pago.Name = "Txt_Pago"
+        Txt_Pago.Size = New Size(173, 50)
+        Txt_Pago.TabIndex = 0
+        Txt_Pago.Text = ""
+        Txt_Pago.TrailingIcon = Nothing
         ' 
         ' PB_Tarjeta
         ' 
@@ -111,16 +111,16 @@ Partial Class Form1
         ' 
         Rb_Transferencia.AutoSize = True
         Rb_Transferencia.Depth = 0
-        Rb_Transferencia.Location = New Point(478, 109)
+        Rb_Transferencia.Location = New Point(467, 109)
         Rb_Transferencia.Margin = New Padding(0)
         Rb_Transferencia.MouseLocation = New Point(-1, -1)
         Rb_Transferencia.MouseState = MaterialSkin.MouseState.HOVER
         Rb_Transferencia.Name = "Rb_Transferencia"
         Rb_Transferencia.Ripple = True
-        Rb_Transferencia.Size = New Size(92, 37)
+        Rb_Transferencia.Size = New Size(124, 37)
         Rb_Transferencia.TabIndex = 2
         Rb_Transferencia.TabStop = True
-        Rb_Transferencia.Text = "Efectivo"
+        Rb_Transferencia.Text = "Trasferencia"
         Rb_Transferencia.UseVisualStyleBackColor = True
         ' 
         ' Rb_Tarjeta
@@ -155,39 +155,39 @@ Partial Class Form1
         Rb_efectivo.Text = "Efectivo"
         Rb_efectivo.UseVisualStyleBackColor = True
         ' 
-        ' MaterialTextBox2
+        ' Txt_Total
         ' 
-        MaterialTextBox2.AnimateReadOnly = False
-        MaterialTextBox2.BorderStyle = BorderStyle.None
-        MaterialTextBox2.Depth = 0
-        MaterialTextBox2.Font = New Font("Roboto", 9.6F)
-        MaterialTextBox2.LeadingIcon = Nothing
-        MaterialTextBox2.Location = New Point(241, 227)
-        MaterialTextBox2.MaxLength = 50
-        MaterialTextBox2.MouseState = MaterialSkin.MouseState.OUT
-        MaterialTextBox2.Multiline = False
-        MaterialTextBox2.Name = "MaterialTextBox2"
-        MaterialTextBox2.Size = New Size(173, 50)
-        MaterialTextBox2.TabIndex = 9
-        MaterialTextBox2.Text = "$100.00"
-        MaterialTextBox2.TrailingIcon = Nothing
+        Txt_Total.AnimateReadOnly = False
+        Txt_Total.BorderStyle = BorderStyle.None
+        Txt_Total.Depth = 0
+        Txt_Total.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
+        Txt_Total.LeadingIcon = Nothing
+        Txt_Total.Location = New Point(241, 227)
+        Txt_Total.MaxLength = 50
+        Txt_Total.MouseState = MaterialSkin.MouseState.OUT
+        Txt_Total.Multiline = False
+        Txt_Total.Name = "Txt_Total"
+        Txt_Total.Size = New Size(173, 50)
+        Txt_Total.TabIndex = 9
+        Txt_Total.Text = ""
+        Txt_Total.TrailingIcon = Nothing
         ' 
-        ' MaterialTextBox3
+        ' Txt_Cambio
         ' 
-        MaterialTextBox3.AnimateReadOnly = False
-        MaterialTextBox3.BorderStyle = BorderStyle.None
-        MaterialTextBox3.Depth = 0
-        MaterialTextBox3.Font = New Font("Roboto", 9.6F)
-        MaterialTextBox3.LeadingIcon = Nothing
-        MaterialTextBox3.Location = New Point(241, 377)
-        MaterialTextBox3.MaxLength = 50
-        MaterialTextBox3.MouseState = MaterialSkin.MouseState.OUT
-        MaterialTextBox3.Multiline = False
-        MaterialTextBox3.Name = "MaterialTextBox3"
-        MaterialTextBox3.Size = New Size(173, 50)
-        MaterialTextBox3.TabIndex = 11
-        MaterialTextBox3.Text = "$100.00"
-        MaterialTextBox3.TrailingIcon = Nothing
+        Txt_Cambio.AnimateReadOnly = False
+        Txt_Cambio.BorderStyle = BorderStyle.None
+        Txt_Cambio.Depth = 0
+        Txt_Cambio.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
+        Txt_Cambio.LeadingIcon = Nothing
+        Txt_Cambio.Location = New Point(241, 377)
+        Txt_Cambio.MaxLength = 50
+        Txt_Cambio.MouseState = MaterialSkin.MouseState.OUT
+        Txt_Cambio.Multiline = False
+        Txt_Cambio.Name = "Txt_Cambio"
+        Txt_Cambio.Size = New Size(173, 50)
+        Txt_Cambio.TabIndex = 11
+        Txt_Cambio.Text = ""
+        Txt_Cambio.TrailingIcon = Nothing
         ' 
         ' MaterialLabel1
         ' 
@@ -257,10 +257,10 @@ Partial Class Form1
         Controls.Add(MaterialLabel3)
         Controls.Add(MaterialLabel2)
         Controls.Add(MaterialLabel1)
-        Controls.Add(MaterialTextBox3)
-        Controls.Add(MaterialTextBox2)
+        Controls.Add(Txt_Cambio)
+        Controls.Add(Txt_Total)
         Controls.Add(GroupBox1)
-        Controls.Add(MaterialTextBox1)
+        Controls.Add(Txt_Pago)
         Name = "Form1"
         Text = "Pago"
         CType(PB_Tarjeta, ComponentModel.ISupportInitialize).EndInit()
@@ -273,7 +273,7 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents MaterialTextBox1 As MaterialSkin.Controls.MaterialTextBox
+    Friend WithEvents Txt_Pago As MaterialSkin.Controls.MaterialTextBox
     Friend WithEvents PB_Tarjeta As PictureBox
     Friend WithEvents PB_Efectivo As PictureBox
     Friend WithEvents PB_Transferencia As PictureBox
@@ -281,8 +281,8 @@ Partial Class Form1
     Friend WithEvents Rb_efectivo As MaterialSkin.Controls.MaterialRadioButton
     Friend WithEvents Rb_Transferencia As MaterialSkin.Controls.MaterialRadioButton
     Friend WithEvents Rb_Tarjeta As MaterialSkin.Controls.MaterialRadioButton
-    Friend WithEvents MaterialTextBox2 As MaterialSkin.Controls.MaterialTextBox
-    Friend WithEvents MaterialTextBox3 As MaterialSkin.Controls.MaterialTextBox
+    Friend WithEvents Txt_Total As MaterialSkin.Controls.MaterialTextBox
+    Friend WithEvents Txt_Cambio As MaterialSkin.Controls.MaterialTextBox
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel

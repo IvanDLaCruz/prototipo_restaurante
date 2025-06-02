@@ -12,4 +12,8 @@
     Private Sub PB_Restaurante_Click(sender As Object, e As EventArgs) Handles PB_Restaurante.Click
         Form5.Show()
     End Sub
+
+    Private Sub PB_Menu_Click(sender As Object, e As EventArgs) Handles PB_Menu.Click
+        Form6.Show()
+    End Sub
 End Class

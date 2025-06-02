@@ -30,6 +30,7 @@ Partial Class Form2
         MaterialLabel11 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel9 = New MaterialSkin.Controls.MaterialLabel()
         GroupBox1 = New GroupBox()
+        MaterialLabel16 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel12 = New MaterialSkin.Controls.MaterialLabel()
         cb3 = New MaterialSkin.Controls.MaterialCheckbox()
         cb5 = New MaterialSkin.Controls.MaterialCheckbox()
@@ -41,13 +42,12 @@ Partial Class Form2
         MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
         PictureBox1 = New PictureBox()
-        MaterialTextBox1 = New MaterialSkin.Controls.MaterialTextBox()
+        TxtTotal = New MaterialSkin.Controls.MaterialTextBox()
         MaterialLabel13 = New MaterialSkin.Controls.MaterialLabel()
         PictureBox2 = New PictureBox()
         PictureBox3 = New PictureBox()
         MaterialLabel14 = New MaterialSkin.Controls.MaterialLabel()
         MaterialLabel15 = New MaterialSkin.Controls.MaterialLabel()
-        MaterialLabel16 = New MaterialSkin.Controls.MaterialLabel()
         GroupBox1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -164,6 +164,18 @@ Partial Class Form2
         GroupBox1.TabIndex = 5
         GroupBox1.TabStop = False
         GroupBox1.Text = "Productos"
+        ' 
+        ' MaterialLabel16
+        ' 
+        MaterialLabel16.AutoSize = True
+        MaterialLabel16.Depth = 0
+        MaterialLabel16.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
+        MaterialLabel16.Location = New Point(211, 53)
+        MaterialLabel16.MouseState = MaterialSkin.MouseState.HOVER
+        MaterialLabel16.Name = "MaterialLabel16"
+        MaterialLabel16.Size = New Size(57, 19)
+        MaterialLabel16.TabIndex = 27
+        MaterialLabel16.Text = "Precios:"
         ' 
         ' MaterialLabel12
         ' 
@@ -311,22 +323,22 @@ Partial Class Form2
         PictureBox1.TabIndex = 18
         PictureBox1.TabStop = False
         ' 
-        ' MaterialTextBox1
+        ' TxtTotal
         ' 
-        MaterialTextBox1.AnimateReadOnly = False
-        MaterialTextBox1.BorderStyle = BorderStyle.None
-        MaterialTextBox1.Depth = 0
-        MaterialTextBox1.Font = New Font("Roboto", 9.6F)
-        MaterialTextBox1.LeadingIcon = Nothing
-        MaterialTextBox1.Location = New Point(440, 307)
-        MaterialTextBox1.MaxLength = 50
-        MaterialTextBox1.MouseState = MaterialSkin.MouseState.OUT
-        MaterialTextBox1.Multiline = False
-        MaterialTextBox1.Name = "MaterialTextBox1"
-        MaterialTextBox1.Size = New Size(166, 50)
-        MaterialTextBox1.TabIndex = 19
-        MaterialTextBox1.Text = "$135.00"
-        MaterialTextBox1.TrailingIcon = Nothing
+        TxtTotal.AnimateReadOnly = False
+        TxtTotal.BorderStyle = BorderStyle.None
+        TxtTotal.Depth = 0
+        TxtTotal.Font = New Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel)
+        TxtTotal.LeadingIcon = Nothing
+        TxtTotal.Location = New Point(440, 307)
+        TxtTotal.MaxLength = 50
+        TxtTotal.MouseState = MaterialSkin.MouseState.OUT
+        TxtTotal.Multiline = False
+        TxtTotal.Name = "TxtTotal"
+        TxtTotal.Size = New Size(166, 50)
+        TxtTotal.TabIndex = 19
+        TxtTotal.Text = ""
+        TxtTotal.TrailingIcon = Nothing
         ' 
         ' MaterialLabel13
         ' 
@@ -384,18 +396,6 @@ Partial Class Form2
         MaterialLabel15.TabIndex = 26
         MaterialLabel15.Text = "Seleccionar todo"
         ' 
-        ' MaterialLabel16
-        ' 
-        MaterialLabel16.AutoSize = True
-        MaterialLabel16.Depth = 0
-        MaterialLabel16.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel)
-        MaterialLabel16.Location = New Point(211, 53)
-        MaterialLabel16.MouseState = MaterialSkin.MouseState.HOVER
-        MaterialLabel16.Name = "MaterialLabel16"
-        MaterialLabel16.Size = New Size(57, 19)
-        MaterialLabel16.TabIndex = 27
-        MaterialLabel16.Text = "Precios:"
-        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -406,7 +406,7 @@ Partial Class Form2
         Controls.Add(PictureBox3)
         Controls.Add(PictureBox2)
         Controls.Add(MaterialLabel13)
-        Controls.Add(MaterialTextBox1)
+        Controls.Add(TxtTotal)
         Controls.Add(PictureBox1)
         Controls.Add(MaterialLabel5)
         Controls.Add(MaterialLabel3)
@@ -444,7 +444,7 @@ Partial Class Form2
     Friend WithEvents MaterialLabel12 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel7 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel8 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialTextBox1 As MaterialSkin.Controls.MaterialTextBox
+    Friend WithEvents TxtTotal As MaterialSkin.Controls.MaterialTextBox
     Friend WithEvents MaterialLabel13 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
