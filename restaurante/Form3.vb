@@ -16,4 +16,8 @@
     Private Sub PB_Menu_Click(sender As Object, e As EventArgs) Handles PB_Menu.Click
         Form6.Show()
     End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        Form7.Show()
+    End Sub
 End Class
